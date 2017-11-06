@@ -7,8 +7,8 @@ describe('angular-voter App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should have correct title', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getTitle()).toEqual('Angular Voter');
   });
 });
